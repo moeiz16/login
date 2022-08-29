@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up and Login</title>
+
+    <style>
+      input:focus {
+        background-color: whitesmoke;
+      }
+      .formPage {
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+      }
+      body {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sign Up Form</h1>
+    <div class="formPage">
+      <div>
+        Name:
+        <br />
+        Age:
+        <br />
+        Gender:
+        <br />
+        Email:
+        <br />
+        Password:
+        <br />
+      </div>
+      <div>
+        <input type="text" placeholder="Enter Name" id="nameField" />
+        <br />
+        <input type="text" placeholder="Enter Age" id="ageField" />
+        <br />
+        <input type="radio" value="Male" name="gender" />
+        Male
+        <input type="radio" value="Female" name="gender" />
+        Female
+
+        <br />
+        <input type="email" placeholder="Enter Your Email" id="emailField" />
+        <br />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          id="passField"
+        />
+        <br />
+      </div>
+    </div>
+    <button onclick="signup()">Submit</button>
+    <h1>Login Form</h1>
+    <div class="formPage">
+      <div>
+        Email:
+        <br />
+        Password:
+        <br />
+      </div>
+      <div>
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          id="loginEmailField"
+        />
+        <br />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          id="loginPassField"
+        />
+      </div>
+    </div>
+    <button onclick="authenticate()">Login</button>
+  </body>
+  <script src="script.js"></script>
+</html>
